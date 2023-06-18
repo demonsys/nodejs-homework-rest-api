@@ -1,0 +1,8 @@
+::1 - - [18/Jun/2023:16:32:33 +0000] "GET /api/contact HTTP/1.1" 404 23 "-" "PostmanRuntime/7.32.2"
+::1 - - [18/Jun/2023:16:32:39 +0000] "GET /api/contacts HTTP/1.1" 200 1231 "-" "PostmanRuntime/7.32.2"
+::1 - - [18/Jun/2023:16:34:01 +0000] "GET /api/contacts HTTP/1.1" 200 1231 "-" "PostmanRuntime/7.32.2"
+::1 - - [18/Jun/2023:16:34:03 +0000] "POST /api/contacts HTTP/1.1" 201 101 "-" "PostmanRuntime/7.32.2"
+::1 - - [18/Jun/2023:16:34:14 +0000] "PUT /api/contacts/Rw_kl1aL9-oijHfJAoXr_ HTTP/1.1" 200 99 "-" "PostmanRuntime/7.32.2"
+::1 - - [18/Jun/2023:16:42:10 +0000] "GET /api/contacts HTTP/1.1" 200 1331
+::1 - - [18/Jun/2023:16:42:29 +0000] "POST /api/contacts HTTP/1.1" 201 101
+::1 - - [18/Jun/2023:16:42:34 +0000] "DELETE /api/contacts/MEWxFBEyNXPjEMM0LvW0C HTTP/1.1" 200 29
