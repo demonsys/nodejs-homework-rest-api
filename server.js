@@ -1,8 +1,10 @@
 const app = require('./app');
+
 const mongoose = require('mongoose');
-mongoose.Promise = global.Promise;
-const DB_HOST =
-  'mongodb+srv://demonsys:uUrFC9HOa5KQpfkg@cluster0.wzajazq.mongodb.net/contacts-db?retryWrites=true&w=majority';
+
+// mongoose.Promise = global.Promise;
+const { DB_HOST } = process.env;
+
 mongoose
   .connect(DB_HOST)
   .then(() => {
