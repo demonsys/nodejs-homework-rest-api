@@ -15,7 +15,6 @@ const login = async (req, res) => {
   if (!passwordCompare) {
     throw HttpError(401, "Email or password invalid");
   }
-
   const payload = { id: user.id };
   const token = jwt.sign(payload, SECRET_KEY, { expiresIn: "23h" });
   await User.findByIdAndUpdate(user._id, { token });

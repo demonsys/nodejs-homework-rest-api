@@ -1,4 +1,3 @@
-const { HttpError } = require("../../helpers");
 const { User } = require("../../models/user");
 
 const updateSubscription = async (req, res) => {
@@ -10,9 +9,6 @@ const updateSubscription = async (req, res) => {
     { new: true }
   );
 
-  if (!result) {
-    throw HttpError(404, "Not found");
-  }
   res.json({
     user: {
       email: result.email,
